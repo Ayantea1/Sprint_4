@@ -39,20 +39,20 @@ public class SamokatOrderTest {
         OrderPage orderPage = new OrderPage(rule.getDriver());
         mainPage.clickButton(orderButton);
         rule.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        orderPage.setName("Имя")
-                .setSurname("Фамилия")
-                .setAddress("Адрес 1")
+        orderPage.setName("РРјСЏ")
+                .setSurname("Р¤Р°РјРёР»РёСЏ")
+                .setAddress("РђРґСЂРµСЃ 1")
                 .setPhone("89874562132")
-                .setMetro("Лубянка")
+                .setMetro("Р›СѓР±СЏРЅРєР°")
                 .clickButton(orderPage.getNextButton());
         rule.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         orderPage
                 .setDate("30.03.2022")
-                .timeChoose("сутки")
+                .timeChoose("СЃСѓС‚РєРё")
                 .clickButton(orderPage.getFinalOrderButton());
-        orderPage.isTextCorrect(orderPage.getModalHeader(), "Хотите оформить заказ?");
+        orderPage.isTextCorrect(orderPage.getModalHeader(), "РҐРѕС‚РёС‚Рµ РѕС„РѕСЂРјРёС‚СЊ Р·Р°РєР°Р·?");
         orderPage.clickButton(orderPage.getAcceptButton());
-        orderPage.isTextCorrect(orderPage.getModalHeader(), "Заказ оформлен");
+        orderPage.isTextCorrect(orderPage.getModalHeader(), "Р—Р°РєР°Р· РѕС„РѕСЂРјР»РµРЅ");
     }
 }
 }

@@ -6,18 +6,18 @@ import org.openqa.selenium.WebDriver;
 
 
 public class OrderPage extends PageOptions {
-    private final By nameField = By.xpath(".//input[@placeholder = '* Имя']");
-    private final By surnameField = By.xpath(".//input[@placeholder = '* Фамилия']");
-    private final By addressField = By.xpath(".//input[@placeholder = '* Адрес: куда привезти заказ']");
-    private final By metroField = By.xpath(".//input[@placeholder = '* Станция метро']");
-    private final By phoneField = By.xpath(".//input[@placeholder = '* Телефон: на него позвонит курьер']");
-    private final By dateField = By.xpath(".//input[@placeholder = '* Когда привезти самокат']");
-    private final By timeField = By.xpath(".//div[text() = '* Срок аренды']");
+    private final By nameField = By.xpath(".//input[@placeholder = '* РРјСЏ']");
+    private final By surnameField = By.xpath(".//input[@placeholder = '* Р¤Р°РјРёР»РёСЏ']");
+    private final By addressField = By.xpath(".//input[@placeholder = '* РђРґСЂРµСЃ: РєСѓРґР° РїСЂРёРІРµР·С‚Рё Р·Р°РєР°Р·']");
+    private final By metroField = By.xpath(".//input[@placeholder = '* РЎС‚Р°РЅС†РёСЏ РјРµС‚СЂРѕ']");
+    private final By phoneField = By.xpath(".//input[@placeholder = '* РўРµР»РµС„РѕРЅ: РЅР° РЅРµРіРѕ РїРѕР·РІРѕРЅРёС‚ РєСѓСЂСЊРµСЂ']");
+    private final By dateField = By.xpath(".//input[@placeholder = '* РљРѕРіРґР° РїСЂРёРІРµР·С‚Рё СЃР°РјРѕРєР°С‚']");
+    private final By timeField = By.xpath(".//div[text() = '* РЎСЂРѕРє Р°СЂРµРЅРґС‹']");
 
     private final By modalHeader = By.className("Order_ModalHeader__3FDaJ");
-    private final By finalOrderButton = By.xpath(".//div[@class = 'Order_Buttons__1xGrp']/button[text()='Заказать']");
-    private final By acceptButton = By.xpath(".//div[@class = 'Order_Modal__YZ-d3']/button[text()='Да']");
-    private final By nextButton = By.xpath(".//button[text() = 'Далее']");
+    private final By finalOrderButton = By.xpath(".//div[@class = 'Order_Buttons__1xGrp']/button[text()='Р—Р°РєР°Р·Р°С‚СЊ']");
+    private final By acceptButton = By.xpath(".//div[@class = 'Order_Modal__YZ-d3']/button[text()='Р”Р°']");
+    private final By nextButton = By.xpath(".//button[text() = 'Р”Р°Р»РµРµ']");
 
     public OrderPage (WebDriver driver){
         super(driver);
