@@ -8,18 +8,15 @@ import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+@RunWith(Parameterized.class)
 public class AccordionTest {
 
-
-
-    @RunWith(Parameterized.class)
-    public static class CheckAccordionText {
         private static WebDriver driver;
         private final By accButton;
         private final By accAnswer;
         private final String text;
 
-        public CheckAccordionText(By accButton, By accAnswer, String text) {
+        public AccordionTest(By accButton, By accAnswer, String text) {
             this.accButton = accButton;
             this.accAnswer = accAnswer;
             this.text = text;
@@ -49,4 +46,4 @@ public class AccordionTest {
         mainPage.isTextCorrect(accAnswer, text);
         }
     }
-}
+

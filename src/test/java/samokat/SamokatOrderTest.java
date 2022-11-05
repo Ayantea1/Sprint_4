@@ -10,15 +10,13 @@ import org.openqa.selenium.WebDriver;
 import org.junit.Test;
 import java.util.concurrent.TimeUnit;
 
+@RunWith(Parameterized.class)
 public class SamokatOrderTest {
-
-    @RunWith(Parameterized.class)
- public static class Order {
 
      private static WebDriver driver;
      private final By orderButton;
 
-     public Order(By orderButton) {
+     public SamokatOrderTest(By orderButton) {
          this.orderButton = orderButton;
      }
 
@@ -55,5 +53,5 @@ public class SamokatOrderTest {
         orderPage.isTextCorrect(orderPage.getModalHeader(), "Заказ оформлен");
     }
 }
-}
+
 
